@@ -136,7 +136,11 @@ int main(){
                     min_index = i;
 
                     // printing the ganntChart
-                    cout<<"| "<<completion_time<<" "<<"(Process "<<processes[min_index].process_id<<")"<<" "<<processes[i].arrival_time<<" |"<<endl;
+                    // error it should be CPU Ideal state
+                    // cout<<"| "<<completion_time<<" "<<"(Process "<<processes[min_index].process_id<<")"<<" "<<processes[i].arrival_time<<" |"<<endl;
+                    
+                    // fixed the error on 11.7.25
+                    cout<<"| "<<completion_time<<" "<<"CPU Ideal"<<" "<<processes[i].arrival_time<<" |"<<endl;
 
                     // update the completion time
                     completion_time = processes[i].arrival_time;
